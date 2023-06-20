@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="[Poppins](https://fonts.google.com/specimen/Poppins)">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+<form>
+  <div class="date-container">
+  <lable name="Day">Day</lable>
+  <input type="text" name="day" placeholder="DD" required id="Day">
+  <span id="day-err"></span>
+
+  <lable name="Month">Month</lable>
+  <input type="text" name="month" placeholder="MM" required id="Month">
+  <span id="month-err"></span>
+
+  <lable name="Year">Year</lable>
+  <input type="text" name="year" placeholder="YYYY" required id="Year">
+  <span id="year-err"></span>
+  </div>
+  <button type="submit" ><img id="arrow" src="./assets/images/icon-arrow.svg" class="filter"></button>
+</form>
+
+<div class="year-result">--<span class="years">years</span></div>
+<div class="month-result">--<span calss="months">months</span></div>
+<div class="day-result">--<span class="days">days</span></div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Curtrick Walton</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
