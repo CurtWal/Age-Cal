@@ -12,32 +12,51 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
+
+  <div class="main-container">
+    <div class="content">
 <form>
   <div class="date-container">
   <lable name="Day">Day</lable>
-  <input type="text" name="day" placeholder="DD" required id="Day">
+  <input type="text" name="day" placeholder="DD" class="date-input" required id="Day">
   <span id="day-err"></span>
+  </div>
 
+  <div class="date-container">
   <lable name="Month">Month</lable>
-  <input type="text" name="month" placeholder="MM" required id="Month">
+  <input type="text" name="month" placeholder="MM" class="date-input" required id="Month">
   <span id="month-err"></span>
+  </div>
 
+  <div class="date-container">
   <lable name="Year">Year</lable>
-  <input type="text" name="year" placeholder="YYYY" required id="Year">
+  <input type="text" name="year" placeholder="YYYY" class="date-input" required id="Year">
   <span id="year-err"></span>
   </div>
-  <button type="submit" ><img id="arrow" src="./assets/images/icon-arrow.svg" class="filter"></button>
 </form>
+<div calss="arrow-line">
+  <br>
+  <hr>
+  <img id="arrow" src="./assets/images/icon-arrow.svg" class="filter">
+</div>
 
-<div class="year-result">--<span class="years">years</span></div>
-<div class="month-result">--<span calss="months">months</span></div>
-<div class="day-result">--<span class="days">days</span></div>
+<div class="result-box">
+<div class="year-result">--<span class="date-value">years</span></div>
+<div class="month-result">--<span class="date-value">months</span></div>
+<div class="day-result">--<span class="date-value">days</span></div>
+</div>
+<br>
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Curtrick Walton</a>.
+</div>
+</div>
+  </div>
+  
+  
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Curtrick Walton</a>.
-  </div>
+  
 </body>
 <script src="script.js"></script>
 </html>
